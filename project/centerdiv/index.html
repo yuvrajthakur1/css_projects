@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How to center a div</title>
+
+  <style>
+    *
+    {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body
+    {
+        height: 100vh;
+        background-color: black;
+        /* position: relative; */
+        /* ---------using flex------------ */
+        
+        /* display: flex;
+        justify-content: center;
+        align-items: center; */
+
+       /* using grid */
+
+       /* display: grid;
+       place-items: center; */
+
+       /* another way*/
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        /* isse text bhi center */
+
+    }
+    .child
+    {
+        width: 300px;
+        height: 300px;
+        background-color: rgb(0, 193, 241);
+        /* position: absolute;
+        top:50%;
+        left: 50%;
+        transform: translate(-50%,-50%); */
+
+        /* --------------------using grid---------------------- */
+
+        /* using float  */
+
+        /* float: left;
+        left: 50%; */
+
+
+        /* another way */
+        /* margin: auto; */
+
+
+        /* Also content  */
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+  </style>
+</head>
+<body>
+    <div class="child">
+        center Text
+
+    </div>
+</body>
+</html>

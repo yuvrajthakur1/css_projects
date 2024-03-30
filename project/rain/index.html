@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rain</title>
+    <style>
+        *
+        {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            width: 100vw;
+            height: 100vh;
+            background-image: linear-gradient(
+                rgba(0,0,0,0.7)
+                ,
+                rgba(0,0,0,0.7)
+            ),url('../../3.jpg');
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+        }
+
+        .rain
+        {
+          width: 100vw;
+          height: 100vh;
+          background-image:url(../../images/rain.png);
+          animation: rainy 400ms linear infinite;
+        }
+
+        @keyframes rainy
+        {
+            0%
+            {
+                background-position: 0% 0%;
+            }
+            100%
+            {
+                background-position: 10% 100%;
+                /* left top */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="rain"></div>
+</body>
+</html>

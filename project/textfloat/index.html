@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Float</title>
+
+    <style>
+        *
+        {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            height: 100vh;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+background-color: black;
+        }
+
+        h1{
+            font-size: 48px;
+            text-shadow: -3px 10px 10px rgba(249, 141, 141, 0.2);
+            color: chocolate;
+            text-transform: uppercase;
+            text-align: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            animation: text-floating 0.5s linear infinite alternate;
+        }
+
+        @keyframes text-floating
+        {
+            0%
+            {
+                rotate: 15deg;
+            }
+            50%
+            {
+                rotate: 0deg;
+            }
+            100%
+            {
+                rotate: -15deg;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>OUR CSS <br>JOURNEY</h1>
+</body>
+</html>
